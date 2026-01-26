@@ -1,0 +1,103 @@
+* { 
+
+    margin: 0; 
+
+    padding: 0; 
+
+    box-sizing: border-box; 
+
+    font-family: Arial, sans-serif; 
+
+} 
+
+ 
+
+body { 
+
+    background: #d7efb4; 
+
+    overflow-x: hidden; 
+
+} 
+
+ 
+
+/* FIXNÍ LOGO – klikací */ 
+
+.fixed-logo { 
+
+    position: fixed; 
+
+    top: 15px; 
+
+    left: 15px; 
+
+    font-size: 90px; 
+
+    z-index: 9999; 
+
+    text-decoration: none; 
+
+} 
+
+ 
+
+/* FIXNÍ KOŠÍK – jen vizuální, nekliká se */ 
+
+.fixed-cart { 
+
+    position: fixed; 
+
+    top: 15px; 
+
+    right: 15px; 
+
+    font-size: 90px; 
+
+    z-index: 9999; 
+
+    pointer-events: none; /* deaktivuje kliknutí */ 
+
+    opacity: 0.8; /* lehce ztlumené, aby bylo jasné, že se nedá kliknout */ 
+
+} 
+
+ 
+
+/* OBSAH KOŠÍKU */ 
+
+.content { 
+
+    min-height: 100vh; 
+
+    display: flex; 
+
+    flex-direction: column; 
+
+    justify-content: center; 
+
+    align-items: center; 
+
+    text-align: center; 
+
+} 
+
+ 
+
+.content h1 { 
+
+    font-size: 3rem; 
+
+    margin-bottom: 15px; 
+
+} 
+
+ 
+
+.content p { 
+
+    font-size: 1.5rem; 
+
+    opacity: 0.7; 
+
+} 
