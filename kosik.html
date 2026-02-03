@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8"> 
 
-    <title>Košík</title> 
+    <title>Košík | Čajový svět</title> 
 
     <link rel="stylesheet" href="kosik.css"> 
 
@@ -16,23 +16,89 @@
 
  
 
-<!-- FIXNÍ LOGO (klik na hlavní stránku) --> 
-
-<a href="eshop.html" class="fixed-logo">🍵</a> 
+<a href="index.html" class="fixed-logo">🍵</a> 
 
  
 
-<!-- FIXNÍ KOŠÍK (jen vizuálně) --> 
+<div class="cart-container"> 
 
-<div class="fixed-cart">🛒</div> 
+    <div class="cart-box"> 
+
+        <h1>🛒 Tvůj výběr</h1> 
+
+         
+
+        <div class="cart-items"> 
+
+            <div class="cart-item"> 
+
+                <span class="item-name">Zelený & Jasmínový čaj</span> 
+
+                <span class="item-qty">1x</span> 
+
+                <span class="item-price">159 Kč</span> 
+
+            </div> 
+
+            <div class="cart-item"> 
+
+                <span class="item-name">Matcha čaj</span> 
+
+                <span class="item-qty">2x</span> 
+
+                <span class="item-price">398 Kč</span> 
+
+            </div> 
+
+        </div> 
 
  
 
-<div class="content"> 
+        <div class="cart-total"> 
 
-    <h1>🛒 Košík</h1> 
+            <span>Celkem k úhradě:</span> 
 
-    <p>Košík je zatím prázdný.</p> 
+            <strong>557 Kč</strong> 
+
+        </div> 
+
+ 
+
+        <hr> 
+
+ 
+
+        <form class="checkout-form"> 
+
+            <h3>Dopravní údaje</h3> 
+
+            <input type="text" placeholder="Jméno a příjmení" required> 
+
+            <input type="email" placeholder="Tvůj e-mail" required> 
+
+            <input type="text" placeholder="Adresa (Ulice, město, PSČ)" required> 
+
+             
+
+            <div class="payment-methods"> 
+
+                <label><input type="radio" name="pay" checked> Dobírka</label> 
+
+                <label><input type="radio" name="pay"> Kartou (brzy)</label> 
+
+            </div> 
+
+ 
+
+            <button type="submit" class="order-btn">Dokončit objednávku</button> 
+
+        </form> 
+
+ 
+
+        <a href="index.html" class="back-link">← Zpět k výběru čajů</a> 
+
+    </div> 
 
 </div> 
 
@@ -41,5 +107,4 @@
 </body> 
 
 </html> 
-
  
