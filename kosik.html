@@ -1,110 +1,54 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Košík | Čajový svět</title>
+    <link rel="stylesheet" href="kosik.css">
+</head>
+<body>
+    <a href="index.html" class="fixed-logo">🍵</a>
 
-<html lang="cs"> 
+    <div class="cart-container">
+        <div class="cart-box">
+            <h1>🛒 Tvůj výběr</h1>
+            
+            <div class="cart-items">
+                <div class="cart-item">
+                    <span class="item-name">Zelený & Jasmínový čaj</span>
+                    <span class="item-qty">1x</span>
+                    <span class="item-price">159 Kč</span>
+                </div>
+                <div class="cart-item">
+                    <span class="item-name">Matcha čaj</span>
+                    <span class="item-qty">2x</span>
+                    <span class="item-price">398 Kč</span>
+                </div>
+            </div>
 
-<head> 
+            <div class="cart-total">
+                <span>Celkem k úhradě:</span>
+                <strong>557 Kč</strong>
+            </div>
 
-    <meta charset="UTF-8"> 
+            <hr>
 
-    <title>Košík | Čajový svět</title> 
+            <form class="checkout-form">
+                <h3>Dopravní údaje</h3>
+                <input type="text" placeholder="Jméno a příjmení" required>
+                <input type="email" placeholder="Tvůj e-mail" required>
+                <input type="text" placeholder="Adresa (Ulice, město, PSČ)" required>
+                
+                <div class="payment-methods">
+                    <label><input type="radio" name="pay" checked> Dobírka</label>
+                    <label><input type="radio" name="pay"> Kartou</label>
+                </div>
 
-    <link rel="stylesheet" href="kosik.css"> 
+                <button type="submit" class="order-btn">Dokončit objednávku</button>
+            </form>
 
-</head> 
-
-<body> 
-
- 
-
-<a href="index.html" class="fixed-logo">🍵</a> 
-
- 
-
-<div class="cart-container"> 
-
-    <div class="cart-box"> 
-
-        <h1>🛒 Tvůj výběr</h1> 
-
-         
-
-        <div class="cart-items"> 
-
-            <div class="cart-item"> 
-
-                <span class="item-name">Zelený & Jasmínový čaj</span> 
-
-                <span class="item-qty">1x</span> 
-
-                <span class="item-price">159 Kč</span> 
-
-            </div> 
-
-            <div class="cart-item"> 
-
-                <span class="item-name">Matcha čaj</span> 
-
-                <span class="item-qty">2x</span> 
-
-                <span class="item-price">398 Kč</span> 
-
-            </div> 
-
-        </div> 
-
- 
-
-        <div class="cart-total"> 
-
-            <span>Celkem k úhradě:</span> 
-
-            <strong>557 Kč</strong> 
-
-        </div> 
-
- 
-
-        <hr> 
-
- 
-
-        <form class="checkout-form"> 
-
-            <h3>Dopravní údaje</h3> 
-
-            <input type="text" placeholder="Jméno a příjmení" required> 
-
-            <input type="email" placeholder="Tvůj e-mail" required> 
-
-            <input type="text" placeholder="Adresa (Ulice, město, PSČ)" required> 
-
-             
-
-            <div class="payment-methods"> 
-
-                <label><input type="radio" name="pay" checked> Dobírka</label> 
-
-                <label><input type="radio" name="pay"> Kartou (brzy)</label> 
-
-            </div> 
-
- 
-
-            <button type="submit" class="order-btn">Dokončit objednávku</button> 
-
-        </form> 
-
- 
-
-        <a href="index.html" class="back-link">← Zpět k výběru čajů</a> 
-
-    </div> 
-
-</div> 
-
- 
-
-</body> 
-
-</html> 
- 
+            <a href="index.html" class="back-link">← Zpět k výběru čajů</a>
+        </div>
+    </div>
+</body>
+</html>
