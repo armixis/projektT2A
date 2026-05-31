@@ -4,24 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Košík | Čajový svět</title>
-    <link rel="stylesheet" href="kosik.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <a href="index.html" class="fixed-logo">🍵</a>
+
+    <!-- Header & Navigation -->
+    <header class="header-bar">
+        <div class="header-logo">
+            <a href="index.html">🍵 Čajový Svět</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="kategorie.html">Kategorie čajů</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="vyhledavani.html">🔍 Hledat</a></li>
+                <li><a href="kosik.html" class="active">🛒 Košík (3)</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="cart-container">
+        <!-- Steps Indicator -->
+        <div class="cart-steps">
+            <div class="cart-step active">1. Košík</div>
+            <div class="cart-step">2. Dodací údaje</div>
+            <div class="cart-step">3. Doprava a platba</div>
+            <div class="cart-step">4. Potvrzení</div>
+        </div>
+
         <div class="cart-box">
             <h1>🛒 Tvůj výběr</h1>
             
             <div class="cart-items">
                 <div class="cart-item">
-                    <span class="item-name">Zelený & Jasmínový čaj</span>
-                    <span class="item-qty">1x</span>
+                    <img src="assets/images/zeleny-a-jasmin.jpg" alt="Zelený & Jasmínový čaj">
+                    <div class="item-info">
+                        <span class="item-name"><strong>Zelený & Jasmínový čaj</strong></span>
+                        <span class="item-variant">Varianta: 100g balení</span>
+                    </div>
+                    <div>
+                        <input type="number" class="item-qty-input" value="1" min="1">
+                    </div>
                     <span class="item-price">159 Kč</span>
                 </div>
+                
                 <div class="cart-item">
-                    <span class="item-name">Matcha čaj</span>
-                    <span class="item-qty">2x</span>
+                    <img src="assets/images/matcha.jpg" alt="Matcha čaj">
+                    <div class="item-info">
+                        <span class="item-name"><strong>Matcha čaj</strong></span>
+                        <span class="item-variant">Varianta: Výběrová kvalita</span>
+                    </div>
+                    <div>
+                        <input type="number" class="item-qty-input" value="2" min="1">
+                    </div>
                     <span class="item-price">398 Kč</span>
                 </div>
             </div>
@@ -33,22 +70,35 @@
 
             <hr>
 
-            <form class="checkout-form">
-                <h3>Dopravní údaje</h3>
-                <input type="text" placeholder="Jméno a příjmení" required>
-                <input type="email" placeholder="Tvůj e-mail" required>
-                <input type="text" placeholder="Adresa (Ulice, město, PSČ)" required>
-                
-                <div class="payment-methods">
-                    <label><input type="radio" name="pay" checked> Dobírka</label>
-                    <label><input type="radio" name="pay"> Kartou</label>
-                </div>
-
-                <button type="submit" class="order-btn">Dokončit objednávku</button>
-            </form>
-
-            <a href="index.html" class="back-link">← Zpět k výběru čajů</a>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                <a href="index.html" class="back-link" style="margin-top: 0;">← Zpět k výběru čajů</a>
+                <a href="dodaci-udaje.html" class="order-btn" style="margin-top: 0; text-decoration: none;">Pokračovat k objednávce →</a>
+            </div>
         </div>
     </div>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>O Čajovém světě</h3>
+                <p>Jsme parta bláznů, co si myslí, že čaj vyřeší všechno. Naše listy sbírají cvičené veverky v Himálajích. Pijte čaj, buďte v klidu a neřešte blbosti.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Poděkování</h3>
+                <p>Mazi - kreativita</p>
+                <p>Maty - podpora</p>
+                <p>Kotty - git</p>
+            </div>
+            <div class="footer-section">
+                <h3>Napiš nám</h3>
+                <p>Email: <a href="mailto:ales.macicek@frengp.com">ales.macicek@frengp.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Čajový Svět. Všechna práva vyhrazena.
+        </div>
+    </footer>
+
 </body>
 </html>

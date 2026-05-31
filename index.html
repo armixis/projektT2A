@@ -3,212 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Čajový svět</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Čajový svět | Domů</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
-<a href="index.html" class="fixed-logo">🍵</a>
-<a href="kosik.html" class="fixed-cart">🛒</a>
+    <!-- Header & Navigation Component -->
+    <header class="header-bar">
+        <div class="header-logo">
+            <a href="index.html">🍵 Čajový Svět</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Domů</a></li>
+                <li><a href="kategorie.html">Kategorie čajů</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="vyhledavani.html">🔍 Hledat</a></li>
+                <li><a href="kosik.html">🛒 Košík (3)</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero">
-    <h1 class="hero-title">ČAJOVÝ SVĚT</h1>
-    <span class="scroll">⬇ sjeď dolů ⬇</span>
-</section>
+    <section class="hero">
+        <h1 class="hero-title">ČAJOVÝ SVĚT</h1>
+        <span class="scroll">⬇ sjeď dolů ⬇</span>
+    </section>
 
-<section class="shop">
-    <div class="leaves">
-        <span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span>
+    <!-- Main Content Area -->
+    <main class="shop">
+        <div class="leaves">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span>
+        </div>
+
+        <div class="shop-inner">
+            <!-- Article cards representing products -->
+            <article class="produkt">
+                <a href="#p1">
+                    <img src="assets/images/zeleny-a-jasmin.jpg" alt="Zelený & Jasmínový čaj">
+                    <p>Zelený & Jasmínový čaj</p>
+                    <strong>159 Kč / 100g</strong>
+                </a>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+
+            <article class="produkt">
+                <a href="#p2">
+                    <img src="assets/images/ovocny.jpg" alt="Ovocný čaj">
+                    <p>Ovocný čaj</p>
+                    <strong>149 Kč / 100g</strong>
+                </a>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+
+            <article class="produkt">
+                <a href="#p3">
+                    <img src="assets/images/cerny.jpg" alt="Černý čaj">
+                    <p>Černý čaj</p>
+                    <strong>179 Kč / 100g</strong>
+                </a>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+
+            <article class="produkt">
+                <a href="#p4">
+                    <img src="assets/images/matcha.jpg" alt="Matcha čaj">
+                    <p>Matcha čaj</p>
+                    <strong>199 Kč / 100g</strong>
+                </a>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+
+            <article class="produkt">
+                <a href="#p5">
+                    <img src="assets/images/bylinny.jpg" alt="Bylinný čaj">
+                    <p>Bylinný čaj</p>
+                    <strong>159 Kč / 100g</strong>
+                </a>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+
+            <article class="produkt">
+                <a href="#p6">
+                    <img src="assets/images/oolong.jpg" alt="Oolong čaj">
+                    <p>Oolong čaj</p>
+                    <strong>189 Kč / 100g</strong>
+                </a>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+
+            <article class="produkt">
+                <a href="#p7">
+                    <img src="assets/images/wellness.jpg" alt="Wellness čaj">
+                    <p>Wellness čaj</p>
+                    <strong>169 Kč / 100g</strong>
+                </a>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+
+            <article class="produkt">
+                <a href="#p8">
+                    <img src="assets/images/hubnuti.jpg" alt="Čaj na hubnutí">
+                    <p>Čaj na hubnutí</p>
+                    <strong>159 Kč / 100g</strong>
+                </a>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+        </div>
+    </main>
+
+    <!-- Modals for details on homepage (retained for backward compatibility and falling list animation) -->
+    <div id="p1" class="popup">
+      <div class="popup-content">
+        <a href="#!" class="close">✖</a>
+        <div class="popup-inner">
+          <div class="popup-image"><img src="assets/images/zeleny-a-jasmin.jpg" alt="Zelený & Jasmín"></div>
+          <div class="popup-text">
+            <h2>Zelený & Jasmínový čaj</h2>
+            <p>Kombinace jemných čajových lístků a omamné vůně jasmínu. Ideální pro lehké nastartování dne a zlepšení soustředění díky kofeinu, který se uvolňuje postupně.</p>
+            <strong>159 Kč / 100g</strong>
+            <a href="kosik.html" class="btn">Přidat do košíku</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="shop-inner">
-        <a href="#p1" class="produkt">
-            <img src="zeleny-a-jasmin.jpg" alt="Zelený & Jasmínový čaj">
-            <p>Zelený & Jasmínový čaj</p>
-            <strong>159 Kč / 100g</strong>
-        </a>
-        <a href="#p2" class="produkt">
-            <img src="ovocny.jpg" alt="Ovocný čaj">
-            <p>Ovocný čaj</p>
+    <div id="p2" class="popup">
+      <div class="popup-content">
+        <a href="#!" class="close">✖</a>
+        <div class="popup-inner">
+          <div class="popup-image"><img src="assets/images/ovocny.jpg" alt="Ovocný čaj"></div>
+          <div class="popup-text">
+            <h2>Ovocný čaj</h2>
+            <p>Plná chuť lesních plodů a tropického ovoce. Přirozeně bez kofeinu, takže je skvělý pro děti nebo jako osvěžující pití na večer.</p>
             <strong>149 Kč / 100g</strong>
-        </a>
-        <a href="#p3" class="produkt">
-            <img src="cerny.jpg" alt="Černý čaj">
-            <p>Černý čaj</p>
+            <a href="kosik.html" class="btn">Přidat do košíku</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p3" class="popup">
+      <div class="popup-content">
+        <a href="#!" class="close">✖</a>
+        <div class="popup-inner">
+          <div class="popup-image"><img src="assets/images/cerny.jpg" alt="Černý čaj"></div>
+          <div class="popup-text">
+            <h2>Černý čaj</h2>
+            <p>Klasika s vysokým obsahem kofeinu. Silný nálev, který spolehlivě nahradí ranní kávu, prohřeje organismus a dodá energii na celé dopoledne.</p>
             <strong>179 Kč / 100g</strong>
-        </a>
-        <a href="#p4" class="produkt">
-            <img src="matcha.jpg" alt="Matcha čaj">
-            <p>Matcha čaj</p>
+            <a href="kosik.html" class="btn">Přidat do košíku</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p4" class="popup">
+      <div class="popup-content">
+        <a href="#!" class="close">✖</a>
+        <div class="popup-inner">
+          <div class="popup-image"><img src="assets/images/matcha.jpg" alt="Matcha čaj"></div>
+          <div class="popup-text">
+            <h2>Matcha čaj</h2>
+            <p>Mletý japonský poklad. Obsahuje obrovské množství antioxidantů a dodává stabilní energii díky kofeinu po dobu 4–6 hodin.</p>
             <strong>199 Kč / 100g</strong>
-        </a>
-        <a href="#p5" class="produkt">
-            <img src="bylinny.jpg" alt="Bylinný čaj">
-            <p>Bylinný čaj</p>
+            <a href="kosik.html" class="btn">Přidat do košíku</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p5" class="popup">
+      <div class="popup-content">
+        <a href="#!" class="close">✖</a>
+        <div class="popup-inner">
+          <div class="popup-image"><img src="assets/images/bylinny.jpg" alt="Bylinný čaj"></div>
+          <div class="popup-text">
+            <h2>Bylinný čaj</h2>
+            <p>Směs meduňky, máty a heřmánku. Nejlepší volba pro uklidnění mysli bez kofeinu. Podporuje trávení a klidný spánek.</p>
             <strong>159 Kč / 100g</strong>
-        </a>
-        <a href="#p6" class="produkt">
-            <img src="oolong.jpg" alt="Oolong čaj">
-            <p>Oolong čaj</p>
+            <a href="kosik.html" class="btn">Přidat do košíku</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p6" class="popup">
+      <div class="popup-content">
+        <a href="#!" class="close">✖</a>
+        <div class="popup-inner">
+          <div class="popup-image"><img src="assets/images/oolong.jpg" alt="Oolong čaj"></div>
+          <div class="popup-text">
+            <h2>Oolong čaj</h2>
+            <p>Tradiční čínský "polozelený" čaj. Obsahuje střední množství kofeinu, zrychluje metabolismus a posiluje imunitu.</p>
             <strong>189 Kč / 100g</strong>
-        </a>
-        <a href="#p7" class="produkt">
-            <img src="wellness.jpg" alt="Wellness čaj">
-            <p>Wellness čaj</p>
+            <a href="kosik.html" class="btn">Přidat do košíku</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p7" class="popup">
+      <div class="popup-content">
+        <a href="#!" class="close">✖</a>
+        <div class="popup-inner">
+          <div class="popup-image"><img src="assets/images/wellness.jpg" alt="Wellness čaj"></div>
+          <div class="popup-text">
+            <h2>Wellness čaj</h2>
+            <p>Speciálně namíchaná směs pro detoxikaci. Obsahuje bylinky pro rovnováhu organismu. Přirozeně nízký obsah kofeinu.</p>
             <strong>169 Kč / 100g</strong>
-        </a>
-        <a href="#p8" class="produkt">
-            <img src="hubnuti.jpg" alt="Čaj na hubnutí">
-            <p>Čaj na hubnutí</p>
+            <a href="kosik.html" class="btn">Přidat do košíku</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p8" class="popup">
+      <div class="popup-content">
+        <a href="#!" class="close">✖</a>
+        <div class="popup-inner">
+          <div class="popup-image"><img src="assets/images/hubnuti.jpg" alt="Čaj na hubnutí"></div>
+          <div class="popup-text">
+            <h2>Čaj na hubnutí</h2>
+            <p>Přírodní podpora při spalování tuků. Obsahuje kofein a antioxidanty, které pomáhají tělu efektivněji využívat energii.</p>
             <strong>159 Kč / 100g</strong>
-        </a>
-    </div>
-</section>
-
-<div id="p1" class="popup">
-  <div class="popup-content">
-    <a href="#!" class="close">✖</a>
-    <div class="popup-inner">
-      <div class="popup-image"><img src="zeleny-a-jasmin.jpg" alt="Zelený & Jasmín"></div>
-      <div class="popup-text">
-        <h2>Zelený & Jasmínový čaj</h2>
-        <p>Kombinace jemných čajových lístků a omamné vůně jasmínu. Ideální pro lehké nastartování dne a zlepšení soustředění díky kofeinu, který se uvolňuje postupně.</p>
-        <strong>159 Kč / 100g</strong>
-        <a href="kosik.html" class="btn">Přidat do košíku</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="p2" class="popup">
-  <div class="popup-content">
-    <a href="#!" class="close">✖</a>
-    <div class="popup-inner">
-      <div class="popup-image"><img src="ovocny.jpg" alt="Ovocný čaj"></div>
-      <div class="popup-text">
-        <h2>Ovocný čaj</h2>
-        <p>Plná chuť lesních plodů a tropického ovoce. Přirozeně bez kofeinu, takže je skvělý pro děti nebo jako osvěžující pití na večer.</p>
-        <strong>149 Kč / 100g</strong>
-        <a href="kosik.html" class="btn">Přidat do košíku</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="p3" class="popup">
-  <div class="popup-content">
-    <a href="#!" class="close">✖</a>
-    <div class="popup-inner">
-      <div class="popup-image"><img src="cerny.jpg" alt="Černý čaj"></div>
-      <div class="popup-text">
-        <h2>Černý čaj</h2>
-        <p>Klasika s vysokým obsahem kofeinu. Silný nálev, který spolehlivě nahradí ranní kávu, prohřeje organismus a dodá energii na celé dopoledne.</p>
-        <strong>179 Kč / 100g</strong>
-        <a href="kosik.html" class="btn">Přidat do košíku</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="p4" class="popup">
-  <div class="popup-content">
-    <a href="#!" class="close">✖</a>
-    <div class="popup-inner">
-      <div class="popup-image"><img src="matcha.jpg" alt="Matcha čaj"></div>
-      <div class="popup-text">
-        <h2>Matcha čaj</h2>
-        <p>Mletý japonský poklad. Obsahuje obrovské množství antioxidantů a dodává stabilní energii díky kofeinu po dobu 4–6 hodin.</p>
-        <strong>199 Kč / 100g</strong>
-        <a href="kosik.html" class="btn">Přidat do košíku</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="p5" class="popup">
-  <div class="popup-content">
-    <a href="#!" class="close">✖</a>
-    <div class="popup-inner">
-      <div class="popup-image"><img src="bylinny.jpg" alt="Bylinný čaj"></div>
-      <div class="popup-text">
-        <h2>Bylinný čaj</h2>
-        <p>Směs meduňky, máty a heřmánku. Nejlepší volba pro uklidnění mysli bez kofeinu. Podporuje trávení a klidný spánek.</p>
-        <strong>159 Kč / 100g</strong>
-        <a href="kosik.html" class="btn">Přidat do košíku</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="p6" class="popup">
-  <div class="popup-content">
-    <a href="#!" class="close">✖</a>
-    <div class="popup-inner">
-      <div class="popup-image"><img src="oolong.jpg" alt="Oolong čaj"></div>
-      <div class="popup-text">
-        <h2>Oolong čaj</h2>
-        <p>Tradiční čínský "polozelený" čaj. Obsahuje střední množství kofeinu, zrychluje metabolismus a posiluje imunitu.</p>
-        <strong>189 Kč / 100g</strong>
-        <a href="kosik.html" class="btn">Přidat do košíku</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="p7" class="popup">
-  <div class="popup-content">
-    <a href="#!" class="close">✖</a>
-    <div class="popup-inner">
-      <div class="popup-image"><img src="wellness.jpg" alt="Wellness čaj"></div>
-      <div class="popup-text">
-        <h2>Wellness čaj</h2>
-        <p>Speciálně namíchaná směs pro detoxikaci. Obsahuje bylinky pro rovnováhu organismu. Přirozeně nízký obsah kofeinu.</p>
-        <strong>169 Kč / 100g</strong>
-        <a href="kosik.html" class="btn">Přidat do košíku</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="p8" class="popup">
-  <div class="popup-content">
-    <a href="#!" class="close">✖</a>
-    <div class="popup-inner">
-      <div class="popup-image"><img src="hubnuti.jpg" alt="Čaj na hubnutí"></div>
-      <div class="popup-text">
-        <h2>Čaj na hubnutí</h2>
-        <p>Přírodní podpora při spalování tuků. Obsahuje kofein a antioxidanty, které pomáhají tělu efektivněji využívat energii.</p>
-        <strong>159 Kč / 100g</strong>
-        <a href="kosik.html" class="btn">Přidat do košíku</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>O Čajovém světě</h3>
-            <p>Jsme parta bláznů, co si myslí, že čaj vyřeší všechno. Naše listy sbírají cvičené veverky v Himálajích. Pijte čaj, buďte v klidu a neřešte blbosti.</p>
+            <a href="kosik.html" class="btn">Přidat do košíku</a>
+          </div>
         </div>
-        <div class="footer-section">
-            <h3>Poděkování</h3>
-            <p>Mazi - kreativita</p>
-            <p>Maty - podpora</p>
-            <p>Kotty - git</p>
-        </div>
-        <div class="footer-section">
-            <h3>Napiš nám</h3>
-            <p>Email: <a href="mailto:ales.macicek@frengp.com">ales.macicek@frengp.com</a></p>
-        </div>
+      </div>
     </div>
-    <div class="footer-bottom">
-        &copy; 2026 Čajový Svět
-    </div>
-</footer>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>O Čajovém světě</h3>
+                <p>Jsme parta bláznů, co si myslí, že čaj vyřeší všechno. Naše listy sbírají cvičené veverky v Himálajích. Pijte čaj, buďte v klidu a neřešte blbosti.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Poděkování</h3>
+                <p>Mazi - kreativita</p>
+                <p>Maty - podpora</p>
+                <p>Kotty - git</p>
+            </div>
+            <div class="footer-section">
+                <h3>Napiš nám</h3>
+                <p>Email: <a href="mailto:ales.macicek@frengp.com">ales.macicek@frengp.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Čajový Svět. Všechna práva vyhrazena.
+        </div>
+    </footer>
 
 </body>
-
 </html>

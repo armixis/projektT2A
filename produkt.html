@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelený & Jasmínový čaj | Čajový svět</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header-bar">
+        <div class="header-logo">
+            <a href="index.html">🍵 Čajový Svět</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="kategorie.html" class="active">Kategorie čajů</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="vyhledavani.html">🔍 Hledat</a></li>
+                <li><a href="kosik.html">🛒 Košík (3)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Breadcrumb navigation -->
+        <div style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 20px;">
+            <a href="index.html">Domů</a> &gt; <a href="kategorie.html">Kategorie čajů</a> &gt; <a href="produkty.html">Zelené čaje</a> &gt; Zelený & Jasmínový čaj
+        </div>
+
+        <div class="product-detail-container">
+            <!-- Left Side: Image Gallery -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="assets/images/zeleny-a-jasmin.jpg" alt="Zelený & Jasmínový čaj" id="mainImg">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="assets/images/zeleny-a-jasmin.jpg" alt="Zelený & Jasmínový čaj" class="active" onclick="document.getElementById('mainImg').src=this.src; document.querySelectorAll('.thumbnail-images img').forEach(el=>el.classList.remove('active')); this.classList.add('active');">
+                    <img src="assets/images/wellness.jpg" alt="Wellness nálev" onclick="document.getElementById('mainImg').src=this.src; document.querySelectorAll('.thumbnail-images img').forEach(el=>el.classList.remove('active')); this.classList.add('active');">
+                    <img src="assets/images/matcha.jpg" alt="Příprava čaje" onclick="document.getElementById('mainImg').src=this.src; document.querySelectorAll('.thumbnail-images img').forEach(el=>el.classList.remove('active')); this.classList.add('active');">
+                </div>
+            </div>
+
+            <!-- Right Side: Info & Actions -->
+            <div class="product-info">
+                <h1 style="color: var(--heading-color); margin-bottom: 15px;">Zelený & Jasmínový čaj</h1>
+                
+                <p style="font-size: 1.2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 20px;">159 Kč / 100g</p>
+                
+                <p style="line-height: 1.6; margin-bottom: 25px; opacity: 0.9;">
+                    Kombinace jemných čajových lístků a omamné vůně jasmínu. Ideální pro lehké nastartování dne a zlepšení soustředění díky kofeinu, který se uvolňuje postupně a nezpůsobuje náhlý pokles energie.
+                </p>
+
+                <!-- Purchase form -->
+                <form class="checkout-form" style="margin-bottom: 30px;">
+                    <div>
+                        <label for="variant" style="font-weight: bold; display: block; margin-bottom: 5px;">Hmotnost balení:</label>
+                        <select id="variant" style="padding: 10px;">
+                            <option value="100g">100g (159 Kč)</option>
+                            <option value="250g">250g (359 Kč - ušetříte 38 Kč)</option>
+                            <option value="500g">500g (679 Kč - ušetříte 116 Kč)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="qty" style="font-weight: bold; display: block; margin-bottom: 5px;">Množství:</label>
+                        <input type="number" id="qty" value="1" min="1" style="width: 100px;">
+                    </div>
+
+                    <a href="kosik.html" class="order-btn" style="text-decoration: none;">🛒 Přidat do košíku</a>
+                </form>
+
+                <!-- Technical parameters table -->
+                <h3 style="color: var(--heading-color); margin-bottom: 10px; border-bottom: 1px solid var(--border-color); padding-bottom: 5px;">Specifikace čaje</h3>
+                <table class="product-info-table">
+                    <tr>
+                        <th>Země původu:</th>
+                        <td>Čína (provincie Fujian)</td>
+                    </tr>
+                    <tr>
+                        <th>Doba louhování:</th>
+                        <td>2–3 minuty</td>
+                    </tr>
+                    <tr>
+                        <th>Teplota vody:</th>
+                        <td>75°C - 80°C</td>
+                    </tr>
+                    <tr>
+                        <th>Složení:</th>
+                        <td>Zelený čaj pravý, květy jasmínu (1%)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>O Čajovém světě</h3>
+                <p>Jsme parta bláznů, co si myslí, že čaj vyřeší všechno. Naše listy sbírají cvičené veverky v Himálajích. Pijte čaj, buďte v klidu a neřešte blbosti.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Poděkování</h3>
+                <p>Mazi - kreativita</p>
+                <p>Maty - podpora</p>
+                <p>Kotty - git</p>
+            </div>
+            <div class="footer-section">
+                <h3>Napiš nám</h3>
+                <p>Email: <a href="mailto:ales.macicek@frengp.com">ales.macicek@frengp.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Čajový Svět. Všechna práva vyhrazena.
+        </div>
+    </footer>
+
+</body>
+</html>

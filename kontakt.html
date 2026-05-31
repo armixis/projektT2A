@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Čajový svět</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header-bar">
+        <div class="header-logo">
+            <a href="index.html">🍵 Čajový Svět</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="kategorie.html">Kategorie čajů</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li><a href="vyhledavani.html">🔍 Hledat</a></li>
+                <li><a href="kosik.html">🛒 Košík (3)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="color: var(--heading-color); margin-bottom: 30px; text-align: center;">Napište nám</h1>
+        
+        <div style="display: flex; gap: 40px; flex-wrap: wrap; margin-top: 20px;">
+            <!-- Left Side: Contact details -->
+            <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 20px;">
+                <h2 style="color: var(--heading-color);">Kontaktní údaje</h2>
+                
+                <p>Máte nějaký dotaz, připomínku nebo zájem o spolupráci? Neváhejte nás kontaktovat prostřednictvím telefonu, e-mailu nebo kontaktního formuláře.</p>
+                
+                <div>
+                    <p><strong>📞 Telefon:</strong> +420 123 456 789</p>
+                    <p><strong>✉ E-mail:</strong> <a href="mailto:ales.macicek@frengp.com" style="color: var(--primary-color); font-weight: bold;">ales.macicek@frengp.com</a></p>
+                </div>
+
+                <div>
+                    <h3>📍 Adresa kamenné prodejny:</h3>
+                    <p>Čajový Svět s.r.o.</p>
+                    <p>Veselá 45/2</p>
+                    <p>602 00 Brno</p>
+                </div>
+
+                <div>
+                    <h3>🕒 Otevírací doba:</h3>
+                    <p>Pondělí - Pátek: 9:00 - 18:00</p>
+                    <p>Sobota: 9:00 - 13:00</p>
+                    <p>Neděle: Zavřeno</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Inquiry Form -->
+            <div style="flex: 1; min-width: 280px; background: rgba(0,0,0,0.02); padding: 30px; border-radius: 20px; box-shadow: inset 0 2px 5px rgba(0,0,0,0.02);">
+                <h2 style="color: var(--heading-color); margin-bottom: 20px;">Kontaktní formulář</h2>
+                
+                <form class="checkout-form" onsubmit="alert('Zpráva byla odeslána!'); return false;">
+                    <div>
+                        <label style="font-weight: bold; display: block; margin-bottom: 5px;">Vaše jméno *</label>
+                        <input type="text" placeholder="Jan Novák" required>
+                    </div>
+
+                    <div>
+                        <label style="font-weight: bold; display: block; margin-bottom: 5px;">E-mailová adresa *</label>
+                        <input type="email" placeholder="jan.novak@email.cz" required>
+                    </div>
+
+                    <div>
+                        <label style="font-weight: bold; display: block; margin-bottom: 5px;">Zpráva *</label>
+                        <textarea placeholder="Sem napište váš dotaz..." style="min-height: 120px;" required></textarea>
+                    </div>
+
+                    <button type="submit" class="order-btn" style="margin-top: 10px;">Odeslat zprávu</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>O Čajovém světě</h3>
+                <p>Jsme parta bláznů, co si myslí, že čaj vyřeší všechno. Naše listy sbírají cvičené veverky v Himálajích. Pijte čaj, buďte v klidu a neřešte blbosti.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Poděkování</h3>
+                <p>Mazi - kreativita</p>
+                <p>Maty - podpora</p>
+                <p>Kotty - git</p>
+            </div>
+            <div class="footer-section">
+                <h3>Napiš nám</h3>
+                <p>Email: <a href="mailto:ales.macicek@frengp.com">ales.macicek@frengp.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Čajový Svět. Všechna práva vyhrazena.
+        </div>
+    </footer>
+
+</body>
+</html>

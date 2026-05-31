@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doprava a platba | Čajový svět</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header-bar">
+        <div class="header-logo">
+            <a href="index.html">🍵 Čajový Svět</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="kategorie.html">Kategorie čajů</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="vyhledavani.html">🔍 Hledat</a></li>
+                <li><a href="kosik.html" class="active">🛒 Košík (3)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cart-container">
+        <!-- Steps Indicator -->
+        <div class="cart-steps">
+            <a href="kosik.html" class="cart-step">1. Košík</a>
+            <a href="dodaci-udaje.html" class="cart-step">2. Dodací údaje</a>
+            <div class="cart-step active">3. Doprava a platba</div>
+            <div class="cart-step">4. Potvrzení</div>
+        </div>
+
+        <div class="cart-box">
+            <h1>🚚 Doprava a platba</h1>
+            
+            <form class="checkout-form" action="potvrzeni.html">
+                <div>
+                    <h3>Způsob dopravy *</h3>
+                    <div class="shipping-methods">
+                        <label>
+                            <input type="radio" name="shipping" value="zasilkovna" checked>
+                            <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                                <span>📦 Zásilkovna (Na pobočku)</span>
+                                <strong>69 Kč</strong>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="shipping" value="posta">
+                            <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                                <span>📯 Česká pošta (Do ruky)</span>
+                                <strong>99 Kč</strong>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="shipping" value="kuryr">
+                            <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                                <span>🚚 DPD Kurýr</span>
+                                <strong>129 Kč</strong>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <h3>Způsob platby *</h3>
+                    <div class="payment-methods">
+                        <label>
+                            <input type="radio" name="pay" value="karta" checked>
+                            <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                                <span>💳 Kartou online</span>
+                                <strong>ZDARMA</strong>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="pay" value="dobirka">
+                            <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                                <span>💵 Dobírka při převzetí</span>
+                                <strong>+30 Kč</strong>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="pay" value="prevod">
+                            <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                                <span>🏦 Bankovní převod</span>
+                                <strong>ZDARMA</strong>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <hr style="margin: 20px 0;">
+
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <a href="dodaci-udaje.html" class="back-link" style="margin-top: 0;">← Zpět k údajům</a>
+                    <button type="submit" class="order-btn" style="margin-top: 0;">Dokončit objednávku (Celkem: 626 Kč) →</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>O Čajovém světě</h3>
+                <p>Jsme parta bláznů, co si myslí, že čaj vyřeší všechno. Naše listy sbírají cvičené veverky v Himálajích. Pijte čaj, buďte v klidu a neřešte blbosti.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Poděkování</h3>
+                <p>Mazi - kreativita</p>
+                <p>Maty - podpora</p>
+                <p>Kotty - git</p>
+            </div>
+            <div class="footer-section">
+                <h3>Napiš nám</h3>
+                <p>Email: <a href="mailto:ales.macicek@frengp.com">ales.macicek@frengp.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Čajový Svět. Všechna práva vyhrazena.
+        </div>
+    </footer>
+
+</body>
+</html>

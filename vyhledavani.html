@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyhledávání | Čajový svět</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header-bar">
+        <div class="header-logo">
+            <a href="index.html">🍵 Čajový Svět</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="kategorie.html">Kategorie čajů</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="vyhledavani.html" class="active">🔍 Hledat</a></li>
+                <li><a href="kosik.html">🛒 Košík (3)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="color: var(--heading-color); margin-bottom: 25px;">Hledat produkty</h1>
+        
+        <!-- Search bar container -->
+        <div class="search-container">
+            <input type="text" placeholder="Zadejte název čaje (např. zelený, černý, ovocný...)" value="zelený" style="padding: 15px; font-size: 1.1rem;">
+            <button class="btn" style="margin-top: 0; padding: 15px 30px;">Vyhledat 🔍</button>
+        </div>
+
+        <p style="margin-bottom: 30px; font-size: 1.1rem; opacity: 0.8;">Výsledky vyhledávání pro: <strong>"zelený"</strong> (nalezeno 3 produktů)</p>
+
+        <div class="shop-inner" style="width: 100%; padding: 0; background: transparent; box-shadow: none; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+            <!-- Article card components for matching products -->
+            <article class="produkt">
+                <img src="assets/images/zeleny-a-jasmin.jpg" alt="Zelený & Jasmínový čaj">
+                <p>Zelený & Jasmínový čaj</p>
+                <strong>159 Kč / 100g</strong>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+
+            <article class="produkt">
+                <img src="assets/images/matcha.jpg" alt="Matcha čaj">
+                <p>Matcha čaj</p>
+                <strong>199 Kč / 100g</strong>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+
+            <article class="produkt">
+                <img src="assets/images/wellness.jpg" alt="Wellness čaj">
+                <p>Wellness čaj</p>
+                <strong>169 Kč / 100g</strong>
+                <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>O Čajovém světě</h3>
+                <p>Jsme parta bláznů, co si myslí, že čaj vyřeší všechno. Naše listy sbírají cvičené veverky v Himálajích. Pijte čaj, buďte v klidu a neřešte blbosti.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Poděkování</h3>
+                <p>Mazi - kreativita</p>
+                <p>Maty - podpora</p>
+                <p>Kotty - git</p>
+            </div>
+            <div class="footer-section">
+                <h3>Napiš nám</h3>
+                <p>Email: <a href="mailto:ales.macicek@frengp.com">ales.macicek@frengp.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Čajový Svět. Všechna práva vyhrazena.
+        </div>
+    </footer>
+
+</body>
+</html>
