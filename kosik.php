@@ -1,29 +1,16 @@
+<?php $pageTitle = 'Košík | Čajový svět'; ?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Košík | Čajový svět</title>
+    <title><?php echo $pageTitle; ?></title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
     <!-- Header & Navigation -->
-    <header class="header-bar">
-        <div class="header-logo">
-            <a href="index.html">🍵 Čajový Svět</a>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="kategorie.html">Kategorie čajů</a></li>
-                <li><a href="o-nas.html">O nás</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="vyhledavani.html">🔍 Hledat</a></li>
-                <li><a href="kosik.html" class="active">🛒 Košík (3)</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include 'partials/header.php'; ?>
 
     <div class="cart-container">
         <!-- Steps Indicator -->
@@ -71,34 +58,14 @@
             <hr>
 
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
-                <a href="index.html" class="back-link" style="margin-top: 0;">← Zpět k výběru čajů</a>
-                <a href="dodaci-udaje.html" class="order-btn" style="margin-top: 0; text-decoration: none;">Pokračovat k objednávce →</a>
+                <a href="index.php" class="back-link" style="margin-top: 0;">← Zpět k výběru čajů</a>
+                <a href="dodaci-udaje.php" class="order-btn" style="margin-top: 0; text-decoration: none;">Pokračovat k objednávce →</a>
             </div>
         </div>
     </div>
 
     <!-- Footer Component -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>O Čajovém světě</h3>
-                <p>Jsme parta bláznů, co si myslí, že čaj vyřeší všechno. Naše listy sbírají cvičené veverky v Himálajích. Pijte čaj, buďte v klidu a neřešte blbosti.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Poděkování</h3>
-                <p>Mazi - kreativita</p>
-                <p>Maty - podpora</p>
-                <p>Kotty - git</p>
-            </div>
-            <div class="footer-section">
-                <h3>Napiš nám</h3>
-                <p>Email: <a href="mailto:ales.macicek@frengp.com">ales.macicek@frengp.com</a></p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2026 Čajový Svět. Všechna práva vyhrazena.
-        </div>
-    </footer>
+    <?php include 'partials/footer.php'; ?>
 
 </body>
 </html>

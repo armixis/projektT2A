@@ -1,31 +1,18 @@
+<?php $pageTitle = 'Čajový svět | Domů'; ?>
 <!DOCTYPE html>
 <html lang="cs">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Čajový svět | Domů</title>
+  <title><?php echo $pageTitle; ?></title>
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
 
   <!-- Header & Navigation Component -->
-  <header class="header-bar">
-    <div class="header-logo">
-      <a href="index.html">🍵 Čajový Svět</a>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Domů</a></li>
-        <li><a href="kategorie.html">Kategorie čajů</a></li>
-        <li><a href="o-nas.html">O nás</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-        <li><a href="vyhledavani.html">🔍 Hledat</a></li>
-        <li><a href="kosik.html">🛒 Košík (3)</a></li>
-      </ul>
-    </nav>
-  </header>
+  <?php include 'partials/header.php'; ?>
 
   <section class="hero">
     <h1 class="hero-title">ČAJOVÝ SVĚT</h1>
@@ -48,7 +35,7 @@
           <p>Zelený & Jasmínový čaj</p>
           <strong>159 Kč / 100g</strong>
         </a>
-        <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+        <a href="produkt.php" class="btn" style="margin-top: auto;">Detail produktu</a>
       </article>
 
       <article class="produkt">
@@ -57,7 +44,7 @@
           <p>Ovocný čaj</p>
           <strong>149 Kč / 100g</strong>
         </a>
-        <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+        <a href="produkt.php" class="btn" style="margin-top: auto;">Detail produktu</a>
       </article>
 
       <article class="produkt">
@@ -66,7 +53,7 @@
           <p>Černý čaj</p>
           <strong>179 Kč / 100g</strong>
         </a>
-        <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+        <a href="produkt.php" class="btn" style="margin-top: auto;">Detail produktu</a>
       </article>
 
       <article class="produkt">
@@ -75,7 +62,7 @@
           <p>Matcha čaj</p>
           <strong>199 Kč / 100g</strong>
         </a>
-        <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+        <a href="produkt.php" class="btn" style="margin-top: auto;">Detail produktu</a>
       </article>
 
       <article class="produkt">
@@ -84,7 +71,7 @@
           <p>Bylinný čaj</p>
           <strong>159 Kč / 100g</strong>
         </a>
-        <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+        <a href="produkt.php" class="btn" style="margin-top: auto;">Detail produktu</a>
       </article>
 
       <article class="produkt">
@@ -93,7 +80,7 @@
           <p>Oolong čaj</p>
           <strong>189 Kč / 100g</strong>
         </a>
-        <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+        <a href="produkt.php" class="btn" style="margin-top: auto;">Detail produktu</a>
       </article>
 
       <article class="produkt">
@@ -102,7 +89,7 @@
           <p>Wellness čaj</p>
           <strong>169 Kč / 100g</strong>
         </a>
-        <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+        <a href="produkt.php" class="btn" style="margin-top: auto;">Detail produktu</a>
       </article>
 
       <article class="produkt">
@@ -111,12 +98,12 @@
           <p>Čaj na hubnutí</p>
           <strong>159 Kč / 100g</strong>
         </a>
-        <a href="produkt.html" class="btn" style="margin-top: auto;">Detail produktu</a>
+        <a href="produkt.php" class="btn" style="margin-top: auto;">Detail produktu</a>
       </article>
     </div>
   </main>
 
-  <!-- Modals for details on homepage (retained for backward compatibility and falling list animation) -->
+  <!-- Modals for details on homepage -->
   <div id="p1" class="popup">
     <div class="popup-content">
       <a href="#!" class="close">✖</a>
@@ -127,7 +114,7 @@
           <p>Kombinace jemných čajových lístků a omamné vůně jasmínu. Ideální pro lehké nastartování dne a zlepšení
             soustředění díky kofeinu, který se uvolňuje postupně.</p>
           <strong>159 Kč / 100g</strong>
-          <a href="kosik.html" class="btn">Přidat do košíku</a>
+          <a href="kosik.php" class="btn">Přidat do košíku</a>
         </div>
       </div>
     </div>
@@ -143,7 +130,7 @@
           <p>Plná chuť lesních plodů a tropického ovoce. Přirozeně bez kofeinu, takže je skvělý pro děti nebo jako
             osvěžující pití na večer.</p>
           <strong>149 Kč / 100g</strong>
-          <a href="kosik.html" class="btn">Přidat do košíku</a>
+          <a href="kosik.php" class="btn">Přidat do košíku</a>
         </div>
       </div>
     </div>
@@ -159,7 +146,7 @@
           <p>Klasika s vysokým obsahem kofeinu. Silný nálev, který spolehlivě nahradí ranní kávu, prohřeje organismus a
             dodá energii na celé dopoledne.</p>
           <strong>179 Kč / 100g</strong>
-          <a href="kosik.html" class="btn">Přidat do košíku</a>
+          <a href="kosik.php" class="btn">Přidat do košíku</a>
         </div>
       </div>
     </div>
@@ -175,7 +162,7 @@
           <p>Mletý japonský poklad. Obsahuje obrovské množství antioxidantů a dodává stabilní energii díky kofeinu po
             dobu 4–6 hodin.</p>
           <strong>199 Kč / 100g</strong>
-          <a href="kosik.html" class="btn">Přidat do košíku</a>
+          <a href="kosik.php" class="btn">Přidat do košíku</a>
         </div>
       </div>
     </div>
@@ -191,7 +178,7 @@
           <p>Směs meduňky, máty a heřmánku. Nejlepší volba pro uklidnění mysli bez kofeinu. Podporuje trávení a klidný
             spánek.</p>
           <strong>159 Kč / 100g</strong>
-          <a href="kosik.html" class="btn">Přidat do košíku</a>
+          <a href="kosik.php" class="btn">Přidat do košíku</a>
         </div>
       </div>
     </div>
@@ -207,7 +194,7 @@
           <p>Tradiční čínský "polozelený" čaj. Obsahuje střední množství kofeinu, zrychluje metabolismus a posiluje
             imunitu.</p>
           <strong>189 Kč / 100g</strong>
-          <a href="kosik.html" class="btn">Přidat do košíku</a>
+          <a href="kosik.php" class="btn">Přidat do košíku</a>
         </div>
       </div>
     </div>
@@ -223,7 +210,7 @@
           <p>Speciálně namíchaná směs pro detoxikaci. Obsahuje bylinky pro rovnováhu organismu. Přirozeně nízký obsah
             kofeinu.</p>
           <strong>169 Kč / 100g</strong>
-          <a href="kosik.html" class="btn">Přidat do košíku</a>
+          <a href="kosik.php" class="btn">Přidat do košíku</a>
         </div>
       </div>
     </div>
@@ -239,35 +226,14 @@
           <p>Přírodní podpora při spalování tuků. Obsahuje kofein a antioxidanty, které pomáhají tělu efektivněji
             využívat energii.</p>
           <strong>159 Kč / 100g</strong>
-          <a href="kosik.html" class="btn">Přidat do košíku</a>
+          <a href="kosik.php" class="btn">Přidat do košíku</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Footer Component -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>O Čajovém světě</h3>
-        <p>Jsme parta bláznů, co si myslí, že čaj vyřeší všechno. Naše listy sbírají cvičené veverky v Himálajích. Pijte
-          čaj, buďte v klidu a neřešte blbosti.</p>
-      </div>
-      <div class="footer-section">
-        <h3>Poděkování</h3>
-        <p>Mazi - kreativita</p>
-        <p>Maty - podpora</p>
-        <p>Kotty - git</p>
-      </div>
-      <div class="footer-section">
-        <h3>Napiš nám</h3>
-        <p>Email: <a href="mailto:ales.macicek@frengp.com">ales.macicek@frengp.com</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      &copy; 2026 Čajový Svět. Všechna práva vyhrazena.
-    </div>
-  </footer>
+  <?php include 'partials/footer.php'; ?>
 
 </body>
 
